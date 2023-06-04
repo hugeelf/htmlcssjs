@@ -10,10 +10,16 @@ a {
     text-decoration: none;
 }
 
-.top {
+body {
     background: #020A18;
-    padding-bottom: 99px;
 }
+
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+.top {}
 
 .top__menu {
     padding-top: 39px;
@@ -22,6 +28,11 @@ a {
     opacity: 0.02;
     backdrop-filter: blur(100px); */
     border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
 }
 
 .top__menu__link {
@@ -33,8 +44,17 @@ a {
 }
 
 .top__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 120px;
     padding-top: 160px;
     padding-bottom: 197px;
+
+}
+
+.top__info {
+    max-width: 604px;
 }
 
 .subtitle {
@@ -45,6 +65,7 @@ a {
     text-transform: uppercase;
     color: #3A68B8;
     margin-bottom: 10px;
+
 }
 
 .title {
@@ -54,6 +75,7 @@ a {
     line-height: 130%;
     color: #FFFFFF;
     margin-bottom: 40px;
+
 }
 
 .text {
@@ -63,11 +85,16 @@ a {
     line-height: 160%;
     color: #FFFFFF;
     opacity: 0.7;
+    margin-bottom: 50px;
 
 }
 
-.top__button {
-    margin-top: 50px;
+.top__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
     padding: 15px 30px;
     background: #3A68B8;
     border-radius: 5px;
@@ -76,4 +103,76 @@ a {
     font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.top__logos {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 157px;
+    padding-bottom: 264px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.about__text {
+    font-size: 16px;
+}
+
+.about__content {
+    max-width: 484px;
+}
+
+.content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 3fr);
+    padding-bottom: 243px;
+}
+
+.item {
+    background: #132035;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.item_big {
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+
+.item__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.item__text {
+    text-align: center;
 }
