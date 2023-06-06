@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #222222;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.header__left {
+    gap: 41px;
+}
+
+.marketing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 63px;
+    background: #F1E4E6;
+}
+
+.marketing__info {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.marketing__heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.subtitle_colored {
+    color: #F16D7F;
+}
+
+.categories {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.categories__item {
+    padding: 105px 103px;
+}
+
+.category__accessories {
+    grid-column: 1/4;
+}
+
+.category__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.category__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.category__woman {
+    background: no-repeat center url(./img/wonam_cat.jpg);
+    background-size: cover;
+}
+
+.category__man {
+    background: no-repeat center url(./img/man_cat.jpg);
+    background-size: cover;
+}
+
+.category__kids {
+    background: no-repeat center url(./img/kids_cat.jpg);
+    background-size: cover;
+}
+
+.category__accessories {
+    background: no-repeat center url(./img/accessories_cat.jpg);
+    background-size: cover;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.featured {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.featured__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.featured__items {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.featured__item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.featured__item__info {
+    max-width: 360px;
+    padding: 24px 12px;
+    background: #F8F8F8;
+}
+
+.item__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.item__subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 16px;
+}
+
+.item__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid #F26376;
+    padding: 15px 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #F26376;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
