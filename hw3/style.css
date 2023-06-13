@@ -345,7 +345,7 @@ a {
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .content {
         max-width: 375px;
         padding-left: 16px;
@@ -413,5 +413,9 @@ a {
 
     .featured__card {
         width: 100%;
+    }
+
+    .card__img {
+        max-width: 100%;
     }
 }
