@@ -344,3 +344,74 @@ a {
         width: 49%;
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .content {
+        max-width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .profile,
+    .basket {
+        display: none;
+    }
+
+    .marketing {
+        padding-top: 148px;
+        padding-bottom: 149px;
+        display: flex;
+    }
+
+    .marketing__img {
+        display: none;
+    }
+
+    .marketing__header {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .marketing__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .offer__items_small {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .offer__item {
+        width: 100%;
+    }
+
+    .offer__items_big {
+        padding-top: 30px;
+        padding-bottom: 31px;
+    }
+
+    .featured__content {
+        padding-bottom: 85px;
+    }
+
+    .featured__content__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .featured__content__description {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .featured__cards {
+        padding-top: 65px;
+        padding-bottom: 40px;
+        row-gap: 15px;
+    }
+
+    .featured__card {
+        width: 100%;
+    }
+}
