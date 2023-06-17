@@ -293,7 +293,6 @@ a {
     border: 1px solid #FF6A6A;
     background: #FFFFFF;
     color: #FF6A6A;
-    transition: 0.3s;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
